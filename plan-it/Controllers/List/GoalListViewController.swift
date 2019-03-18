@@ -6,7 +6,9 @@ class GoalListViewController: UITableViewController {
     //MARK: - Properties
     
     var goalList: [Goal]!
-    let db = Db()
+    let goalDao = GoalDao.current
+    let categotyDao = CategoryDao.current
+    let priorityDao = PriorityDao.current
     
     //MARK: - Life cycle
     
@@ -23,24 +25,16 @@ class GoalListViewController: UITableViewController {
         //        self.tableView.tableFooterView = UIView()
         
         
-//        db.initData()
-        
-        goalList = db.getAllGoals()
+        goalList = goalDao.getAll()
         
     }
     
     // MARK: - IBActions
     
     @IBAction func initDBButtonPressed(_ sender: UIBarButtonItem) {
-        db.initData()
-        goalList = db.getAllGoals()
-        tableView.reloadData()
     }
     
     @IBAction func clearDBButtonPressed(_ sender: UIBarButtonItem) {
-        db.resetDB()
-        goalList = db.getAllGoals()
-        tableView.reloadData()
     }
     
     
@@ -106,7 +100,7 @@ class GoalListViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            db.deleteGoal(goal: goalList[indexPath.row])
+            goalDao.delete(goalList[indexPath.row])
             goalList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {

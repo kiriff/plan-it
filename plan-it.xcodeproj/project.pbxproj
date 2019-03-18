@@ -10,7 +10,11 @@
 		28DC581B222FCF5600851D59 /* GoalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC581A222FCF5600851D59 /* GoalListViewController.swift */; };
 		28DC5821222FDD8500851D59 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5820222FDD8500851D59 /* Extensions.swift */; };
 		28DC5824222FE08C00851D59 /* GoalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5823222FE08C00851D59 /* GoalListCell.swift */; };
-		28DC5827223F16FF00851D59 /* Db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5826223F16FF00851D59 /* Db.swift */; };
+		28DC5831223F30F000851D59 /* GoalDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5830223F30F000851D59 /* GoalDao.swift */; };
+		28DC5833223F310300851D59 /* PriorityDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5832223F310300851D59 /* PriorityDao.swift */; };
+		28DC5835223F310B00851D59 /* CategoryDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5834223F310B00851D59 /* CategoryDao.swift */; };
+		28DC5837223F386000851D59 /* Crud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5836223F386000851D59 /* Crud.swift */; };
+		28DC5839223F3AA500851D59 /* CrudExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5838223F3AA500851D59 /* CrudExtension.swift */; };
 		28E50EE0222EC9D700312A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E50EDF222EC9D700312A78 /* AppDelegate.swift */; };
 		28E50EE2222EC9D700312A78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E50EE1222EC9D700312A78 /* ViewController.swift */; };
 		28E50EE5222EC9D700312A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E50EE3222EC9D700312A78 /* Main.storyboard */; };
@@ -24,7 +28,11 @@
 		28DC581A222FCF5600851D59 /* GoalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListViewController.swift; sourceTree = "<group>"; };
 		28DC5820222FDD8500851D59 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		28DC5823222FE08C00851D59 /* GoalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListCell.swift; sourceTree = "<group>"; };
-		28DC5826223F16FF00851D59 /* Db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Db.swift; sourceTree = "<group>"; };
+		28DC5830223F30F000851D59 /* GoalDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDao.swift; sourceTree = "<group>"; };
+		28DC5832223F310300851D59 /* PriorityDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityDao.swift; sourceTree = "<group>"; };
+		28DC5834223F310B00851D59 /* CategoryDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDao.swift; sourceTree = "<group>"; };
+		28DC5836223F386000851D59 /* Crud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crud.swift; sourceTree = "<group>"; };
+		28DC5838223F3AA500851D59 /* CrudExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudExtension.swift; sourceTree = "<group>"; };
 		28E50EDC222EC9D700312A78 /* plan-it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E50EDF222EC9D700312A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E50EE1222EC9D700312A78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				28DC5820222FDD8500851D59 /* Extensions.swift */,
+				28DC5838223F3AA500851D59 /* CrudExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -116,12 +125,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		28DC5825223F16EA00851D59 /* DB */ = {
+		28DC5828223F2EBD00851D59 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
-				28DC5826223F16FF00851D59 /* Db.swift */,
+				28DC5836223F386000851D59 /* Crud.swift */,
 			);
-			path = DB;
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		28DC5829223F2EC500851D59 /* DaoImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				28DC5830223F30F000851D59 /* GoalDao.swift */,
+				28DC5832223F310300851D59 /* PriorityDao.swift */,
+				28DC5834223F310B00851D59 /* CategoryDao.swift */,
+			);
+			path = DaoImplementation;
 			sourceTree = "<group>";
 		};
 		28E50ED3222EC9D700312A78 = {
@@ -145,7 +164,8 @@
 		28E50EDE222EC9D700312A78 /* plan-it */ = {
 			isa = PBXGroup;
 			children = (
-				28DC5825223F16EA00851D59 /* DB */,
+				28DC5829223F2EC500851D59 /* DaoImplementation */,
+				28DC5828223F2EBD00851D59 /* DAO */,
 				28DC5822222FE07700851D59 /* Cells */,
 				28DC581F222FDD7800851D59 /* Extensions */,
 				28DC581C222FD92F00851D59 /* Model */,
@@ -256,12 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28DC5827223F16FF00851D59 /* Db.swift in Sources */,
+				28DC5835223F310B00851D59 /* CategoryDao.swift in Sources */,
 				28E50EE8222EC9D700312A78 /* plan_it.xcdatamodeld in Sources */,
+				28DC5837223F386000851D59 /* Crud.swift in Sources */,
+				28DC5839223F3AA500851D59 /* CrudExtension.swift in Sources */,
 				28DC5824222FE08C00851D59 /* GoalListCell.swift in Sources */,
 				28E50EE2222EC9D700312A78 /* ViewController.swift in Sources */,
+				28DC5831223F30F000851D59 /* GoalDao.swift in Sources */,
 				28DC581B222FCF5600851D59 /* GoalListViewController.swift in Sources */,
 				28E50EE0222EC9D700312A78 /* AppDelegate.swift in Sources */,
+				28DC5833223F310300851D59 /* PriorityDao.swift in Sources */,
 				28DC5821222FDD8500851D59 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
