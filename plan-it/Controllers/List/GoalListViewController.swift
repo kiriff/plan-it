@@ -24,7 +24,7 @@ class GoalListViewController: UITableViewController {
         //        self.navigationItem.rightBarButtonItem = self.editButtonItem
         //        self.tableView.tableFooterView = UIView()
         
-        
+        self.title = "Цели"
         goalList = goalDao.getAll()
         
     }
@@ -127,14 +127,23 @@ class GoalListViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        switch segue.identifier {
+        case "UpdateGoal":
+            let cell = sender as! GoalListCell
+            guard let controller = segue.destination as? GoalDetailsController else {
+                fatalError("prepare error")
+            }
+            
+            let selectedIndex = (tableView.indexPath(for: cell)?.row)!
+            let selectedGoal = goalDao.items[selectedIndex]
+            controller.goal = selectedGoal
+            controller.title = "Редактирование"
+        default:
+            return
+        }
     }
-    */
 
 }

@@ -16,7 +16,7 @@
 		28DC5837223F386000851D59 /* Crud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5836223F386000851D59 /* Crud.swift */; };
 		28DC5839223F3AA500851D59 /* CrudExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5838223F3AA500851D59 /* CrudExtension.swift */; };
 		28E50EE0222EC9D700312A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E50EDF222EC9D700312A78 /* AppDelegate.swift */; };
-		28E50EE2222EC9D700312A78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E50EE1222EC9D700312A78 /* ViewController.swift */; };
+		28E50EE2222EC9D700312A78 /* GoalDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E50EE1222EC9D700312A78 /* GoalDetailsController.swift */; };
 		28E50EE5222EC9D700312A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E50EE3222EC9D700312A78 /* Main.storyboard */; };
 		28E50EE8222EC9D700312A78 /* plan_it.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28E50EE6222EC9D700312A78 /* plan_it.xcdatamodeld */; };
 		28E50EEA222EC9D800312A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E50EE9222EC9D800312A78 /* Assets.xcassets */; };
@@ -35,7 +35,7 @@
 		28DC5838223F3AA500851D59 /* CrudExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudExtension.swift; sourceTree = "<group>"; };
 		28E50EDC222EC9D700312A78 /* plan-it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E50EDF222EC9D700312A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28E50EE1222EC9D700312A78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28E50EE1222EC9D700312A78 /* GoalDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsController.swift; sourceTree = "<group>"; };
 		28E50EE4222EC9D700312A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28E50EE7222EC9D700312A78 /* plan_it.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = plan_it.xcdatamodel; sourceTree = "<group>"; };
 		28E50EE9222EC9D800312A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		28DC5817222FCE8500851D59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				28E50EE1222EC9D700312A78 /* ViewController.swift */,
+				28DC583A2240426F00851D59 /* GoalDetails */,
 				28DC5818222FCE9E00851D59 /* List */,
 			);
 			path = Controllers;
@@ -99,13 +99,6 @@
 				28E50EEB222EC9D800312A78 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		28DC581C222FD92F00851D59 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		28DC581F222FDD7800851D59 /* Extensions */ = {
@@ -143,6 +136,14 @@
 			path = DaoImplementation;
 			sourceTree = "<group>";
 		};
+		28DC583A2240426F00851D59 /* GoalDetails */ = {
+			isa = PBXGroup;
+			children = (
+				28E50EE1222EC9D700312A78 /* GoalDetailsController.swift */,
+			);
+			path = GoalDetails;
+			sourceTree = "<group>";
+		};
 		28E50ED3222EC9D700312A78 = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +169,6 @@
 				28DC5828223F2EBD00851D59 /* DAO */,
 				28DC5822222FE07700851D59 /* Cells */,
 				28DC581F222FDD7800851D59 /* Extensions */,
-				28DC581C222FD92F00851D59 /* Model */,
 				28DC5819222FCED500851D59 /* Storyboards */,
 				28DC5817222FCE8500851D59 /* Controllers */,
 				28E50EDF222EC9D700312A78 /* AppDelegate.swift */,
@@ -281,7 +281,7 @@
 				28DC5837223F386000851D59 /* Crud.swift in Sources */,
 				28DC5839223F3AA500851D59 /* CrudExtension.swift in Sources */,
 				28DC5824222FE08C00851D59 /* GoalListCell.swift in Sources */,
-				28E50EE2222EC9D700312A78 /* ViewController.swift in Sources */,
+				28E50EE2222EC9D700312A78 /* GoalDetailsController.swift in Sources */,
 				28DC5831223F30F000851D59 /* GoalDao.swift in Sources */,
 				28DC581B222FCF5600851D59 /* GoalListViewController.swift in Sources */,
 				28E50EE0222EC9D700312A78 /* AppDelegate.swift in Sources */,
