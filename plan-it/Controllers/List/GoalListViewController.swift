@@ -1,5 +1,6 @@
 import UIKit
 import CoreData
+import SPStorkController
 
 class GoalListViewController: UITableViewController {
 
@@ -107,10 +108,6 @@ class GoalListViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
 
     /*
     // Override to support rearranging the table view.
@@ -137,13 +134,33 @@ class GoalListViewController: UITableViewController {
                 fatalError("prepare error")
             }
             
+//            let del = SPStorkTransitioningDelegate()
+//            controller.transitioningDelegate = del
+//            controller.modalPresentationStyle = .custom
+            
             let selectedIndex = (tableView.indexPath(for: cell)?.row)!
             let selectedGoal = goalDao.items[selectedIndex]
             controller.goal = selectedGoal
             controller.title = "Редактирование"
+            controller.delegate = self
         default:
             return
         }
     }
 
+}
+
+extension GoalListViewController: ActionViewControllerDelegate {
+    func done(sourse: UIViewController, data: Any?) {
+        if sourse is GoalDetailsController {
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                goalDao.save()
+                tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+            }
+        }
+    }
+    
+    func cancel(sourse: UIViewController, data: Any?) {
+        
+    }
 }

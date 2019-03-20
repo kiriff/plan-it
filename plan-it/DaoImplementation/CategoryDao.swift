@@ -4,7 +4,9 @@ import CoreData
 class CategoryDao: Crud {
     
     static let current = CategoryDao()
-    private init(){}
+    private init(){
+        items = getAll()
+    }
     
     // MARK: - properties
     

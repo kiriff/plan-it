@@ -4,7 +4,9 @@ import CoreData
 class PriorityDao: Crud {
     
     static let current = PriorityDao()
-    private init(){}
+    private init(){
+        items = getAll()
+    }
     
     // MARK: - properties
     

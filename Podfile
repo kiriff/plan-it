@@ -6,5 +6,7 @@ target 'plan-it' do
   use_frameworks!
 
   # Pods for plan-it
+  
+  pod 'SPStorkController'
 
 end

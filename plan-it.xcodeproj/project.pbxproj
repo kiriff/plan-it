@@ -15,6 +15,16 @@
 		28DC5835223F310B00851D59 /* CategoryDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5834223F310B00851D59 /* CategoryDao.swift */; };
 		28DC5837223F386000851D59 /* Crud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5836223F386000851D59 /* Crud.swift */; };
 		28DC5839223F3AA500851D59 /* CrudExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5838223F3AA500851D59 /* CrudExtension.swift */; };
+		28DC583C22410D7C00851D59 /* GoalNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC583B22410D7C00851D59 /* GoalNameCell.swift */; };
+		28DC583E22410D8A00851D59 /* GoalCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC583D22410D8A00851D59 /* GoalCategoryCell.swift */; };
+		28DC584022410D9800851D59 /* GoalPriorityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC583F22410D9800851D59 /* GoalPriorityCell.swift */; };
+		28DC584222410DA700851D59 /* GoalDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC584122410DA700851D59 /* GoalDateCell.swift */; };
+		28DC584422410DB900851D59 /* GoalDescCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC584322410DB900851D59 /* GoalDescCell.swift */; };
+		28DC5849224185F000851D59 /* ActionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5848224185F000851D59 /* ActionViewControllerDelegate.swift */; };
+		28DC584E2241AE3D00851D59 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC584D2241AE3D00851D59 /* CategoryCell.swift */; };
+		28DC58512241AEAD00851D59 /* CategoryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC58502241AEAD00851D59 /* CategoryListController.swift */; };
+		28DC58532241B6CA00851D59 /* PriorityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC58522241B6CA00851D59 /* PriorityListViewController.swift */; };
+		28DC58552241BB7700851D59 /* PriorityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC58542241BB7700851D59 /* PriorityCell.swift */; };
 		28E50EE0222EC9D700312A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E50EDF222EC9D700312A78 /* AppDelegate.swift */; };
 		28E50EE2222EC9D700312A78 /* GoalDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E50EE1222EC9D700312A78 /* GoalDetailsController.swift */; };
 		28E50EE5222EC9D700312A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E50EE3222EC9D700312A78 /* Main.storyboard */; };
@@ -33,6 +43,16 @@
 		28DC5834223F310B00851D59 /* CategoryDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDao.swift; sourceTree = "<group>"; };
 		28DC5836223F386000851D59 /* Crud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crud.swift; sourceTree = "<group>"; };
 		28DC5838223F3AA500851D59 /* CrudExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudExtension.swift; sourceTree = "<group>"; };
+		28DC583B22410D7C00851D59 /* GoalNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNameCell.swift; sourceTree = "<group>"; };
+		28DC583D22410D8A00851D59 /* GoalCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCategoryCell.swift; sourceTree = "<group>"; };
+		28DC583F22410D9800851D59 /* GoalPriorityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPriorityCell.swift; sourceTree = "<group>"; };
+		28DC584122410DA700851D59 /* GoalDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDateCell.swift; sourceTree = "<group>"; };
+		28DC584322410DB900851D59 /* GoalDescCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDescCell.swift; sourceTree = "<group>"; };
+		28DC5848224185F000851D59 /* ActionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewControllerDelegate.swift; sourceTree = "<group>"; };
+		28DC584D2241AE3D00851D59 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		28DC58502241AEAD00851D59 /* CategoryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListController.swift; sourceTree = "<group>"; };
+		28DC58522241B6CA00851D59 /* PriorityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityListViewController.swift; sourceTree = "<group>"; };
+		28DC58542241BB7700851D59 /* PriorityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityCell.swift; sourceTree = "<group>"; };
 		28E50EDC222EC9D700312A78 /* plan-it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E50EDF222EC9D700312A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E50EE1222EC9D700312A78 /* GoalDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsController.swift; sourceTree = "<group>"; };
@@ -88,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				28DC581A222FCF5600851D59 /* GoalListViewController.swift */,
+				28DC58502241AEAD00851D59 /* CategoryListController.swift */,
+				28DC58522241B6CA00851D59 /* PriorityListViewController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -113,7 +135,9 @@
 		28DC5822222FE07700851D59 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				28DC5823222FE08C00851D59 /* GoalListCell.swift */,
+				28DC584C2241ADFD00851D59 /* SelectCategoryCell */,
+				28DC584B2241ADF600851D59 /* DetailsCell */,
+				28DC584A2241ADE400851D59 /* ListCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -144,6 +168,43 @@
 			path = GoalDetails;
 			sourceTree = "<group>";
 		};
+		28DC5847224185A900851D59 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				28DC5848224185F000851D59 /* ActionViewControllerDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		28DC584A2241ADE400851D59 /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				28DC5823222FE08C00851D59 /* GoalListCell.swift */,
+				28DC584D2241AE3D00851D59 /* CategoryCell.swift */,
+				28DC58542241BB7700851D59 /* PriorityCell.swift */,
+			);
+			path = ListCell;
+			sourceTree = "<group>";
+		};
+		28DC584B2241ADF600851D59 /* DetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				28DC583B22410D7C00851D59 /* GoalNameCell.swift */,
+				28DC583D22410D8A00851D59 /* GoalCategoryCell.swift */,
+				28DC583F22410D9800851D59 /* GoalPriorityCell.swift */,
+				28DC584122410DA700851D59 /* GoalDateCell.swift */,
+				28DC584322410DB900851D59 /* GoalDescCell.swift */,
+			);
+			path = DetailsCell;
+			sourceTree = "<group>";
+		};
+		28DC584C2241ADFD00851D59 /* SelectCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SelectCategoryCell;
+			sourceTree = "<group>";
+		};
 		28E50ED3222EC9D700312A78 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +226,7 @@
 		28E50EDE222EC9D700312A78 /* plan-it */ = {
 			isa = PBXGroup;
 			children = (
+				28DC5847224185A900851D59 /* Delegates */,
 				28DC5829223F2EC500851D59 /* DaoImplementation */,
 				28DC5828223F2EBD00851D59 /* DAO */,
 				28DC5822222FE07700851D59 /* Cells */,
@@ -190,6 +252,7 @@
 				28E50ED8222EC9D700312A78 /* Sources */,
 				28E50ED9222EC9D700312A78 /* Frameworks */,
 				28E50EDA222EC9D700312A78 /* Resources */,
+				B191E288F0BBF2B2B9FC221D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,6 +332,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B191E288F0BBF2B2B9FC221D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plan-it/Pods-plan-it-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SPStorkController/SPStorkController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SPStorkController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plan-it/Pods-plan-it-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -278,15 +363,25 @@
 			files = (
 				28DC5835223F310B00851D59 /* CategoryDao.swift in Sources */,
 				28E50EE8222EC9D700312A78 /* plan_it.xcdatamodeld in Sources */,
+				28DC584022410D9800851D59 /* GoalPriorityCell.swift in Sources */,
 				28DC5837223F386000851D59 /* Crud.swift in Sources */,
+				28DC58532241B6CA00851D59 /* PriorityListViewController.swift in Sources */,
+				28DC5849224185F000851D59 /* ActionViewControllerDelegate.swift in Sources */,
+				28DC584E2241AE3D00851D59 /* CategoryCell.swift in Sources */,
 				28DC5839223F3AA500851D59 /* CrudExtension.swift in Sources */,
+				28DC58512241AEAD00851D59 /* CategoryListController.swift in Sources */,
 				28DC5824222FE08C00851D59 /* GoalListCell.swift in Sources */,
+				28DC583E22410D8A00851D59 /* GoalCategoryCell.swift in Sources */,
 				28E50EE2222EC9D700312A78 /* GoalDetailsController.swift in Sources */,
 				28DC5831223F30F000851D59 /* GoalDao.swift in Sources */,
+				28DC584222410DA700851D59 /* GoalDateCell.swift in Sources */,
 				28DC581B222FCF5600851D59 /* GoalListViewController.swift in Sources */,
 				28E50EE0222EC9D700312A78 /* AppDelegate.swift in Sources */,
+				28DC58552241BB7700851D59 /* PriorityCell.swift in Sources */,
+				28DC583C22410D7C00851D59 /* GoalNameCell.swift in Sources */,
 				28DC5833223F310300851D59 /* PriorityDao.swift in Sources */,
 				28DC5821222FDD8500851D59 /* Extensions.swift in Sources */,
+				28DC584422410DB900851D59 /* GoalDescCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

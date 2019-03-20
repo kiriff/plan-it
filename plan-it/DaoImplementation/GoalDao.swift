@@ -4,7 +4,9 @@ import CoreData
 class GoalDao: Crud {
     
     static let current = GoalDao()
-    private init(){}
+    private init(){
+        
+    }
     
     // MARK: - properties
     
